@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/7.8.2/video.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #282828;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#2f4f4f;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body background-color: #282828>
+  <div class="left">
+    <p>Welcome to Sam's website!</p>
+    <p> Join the Zoom Room here:</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+    <p>-</p>
+  </div>
+  <div class="main" align"center">
+    <video
+    id="my-player"
+    class="video-js"
+    controls
+    preload="auto"
+    poster="//vjs.zencdn.net/v/oceans.png"
+    data-setup='{}'>
+  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+  <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
+</video>
+  </div>
+  <div class="right">
+    <p>Available Movies:</p>
+    <p>Mean Girls</p>
+    <p>Spirited Away</p>
+    <p>Juno</p>
+    <p>How to Train Your Dragon</p>
+    <p>Jurassic Park</p>
+    <p>Knights Of Badassdom</p>
+    <p>Van Helsing</p>
+    <p>Young Frankenstein</p>
+    <p>Interspecies Reviewers Ep 1-8</p>
+
+  </div>
+</body>
+</html>
